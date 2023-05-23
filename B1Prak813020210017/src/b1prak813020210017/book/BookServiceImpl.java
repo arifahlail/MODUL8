@@ -38,7 +38,7 @@ public class BookServiceImpl implements BookService{
         List<Book> books = new ArrayList<>();
         
         try {
-            String query = "SELECT * FORM book";
+            String query = "SELECT * FROM book";
             statement = (PreparedStatement) connection.prepareStatement(query);
             ResultSet result = statement.executeQuery();
             while (result.next()) {
